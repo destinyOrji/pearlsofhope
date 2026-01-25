@@ -1,0 +1,27 @@
+{
+    "name": "ngo-website/mongodb-app",
+    "description": "NGO Website with MongoDB backend",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "mongodb/mongodb": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "includes/config.php",
+            "includes/db.php",
+            "includes/functions.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p data/contact_messages",
+            "mkdir -p uploads",
+            "chmod 755 data/contact_messages",
+            "chmod 755 uploads"
+        ]
+    }
+}

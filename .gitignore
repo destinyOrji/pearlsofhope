@@ -1,0 +1,45 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Development files
+/data/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Upload files (optional - you might want to keep some sample uploads)
+/uploads/*.jpg
+/uploads/*.jpeg
+/uploads/*.png
+/uploads/*.gif
+
+# Keep upload directory structure
+!/uploads/.gitkeep
+
+# Temporary files
+/tmp/
+*.tmp
+
+# Cache files
+*.cache
+
+# Backup files
+*.bak
+*.backup
+
+# Local development overrides
+config.local.php
