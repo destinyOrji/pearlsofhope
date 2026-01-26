@@ -12,7 +12,11 @@ define('NGO_CONFIG_LOADED', true);
 
 // Environment detection
 $isProduction = isset($_ENV['RENDER']) || isset($_SERVER['RENDER']) || 
-                (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'onrender.com') !== false);
+                isset($_ENV['RAILWAY']) || isset($_SERVER['RAILWAY']) ||
+                isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL']) ||
+                (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'onrender.com') !== false) ||
+                (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'railway.app') !== false) ||
+                (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'vercel.app') !== false);
 
 // Load Composer autoloader
 require_once __DIR__ . '/../vendor/autoload.php';
