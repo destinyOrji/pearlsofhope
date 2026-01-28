@@ -6,7 +6,8 @@
   },
   "build": {
     "env": {
-      "COMPOSER_CACHE_DIR": "/tmp"
+      "COMPOSER_CACHE_DIR": "/tmp",
+      "NODE_VERSION": "20"
     }
   },
   "routes": [
