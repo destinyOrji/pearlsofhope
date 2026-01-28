@@ -3,7 +3,7 @@
     "description": "NGO Website with MongoDB backend",
     "type": "project",
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "mongodb/mongodb": "^2.0"
     },
     "autoload": {
@@ -16,7 +16,7 @@
     "config": {
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.0"
+            "php": "8.1"
         }
     },
     "scripts": {
